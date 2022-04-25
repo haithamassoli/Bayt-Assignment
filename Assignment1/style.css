@@ -1,0 +1,206 @@
+/* Start Global style */
+:root {
+  --main-color: rgb(0, 150, 136);
+  --secondary-color: #333;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+/* End Global style */
+/* Start Navbar Style */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar ul li a .logo-icon {
+  margin-right: 8px;
+}
+
+.navbar ul li {
+  padding: 20px;
+}
+
+.navbar ul li.active {
+  background-color: var(--main-color);
+}
+
+.navbar .search-icon {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.navbar .bars-icon {
+  display: none;
+}
+
+.navbar ul li a .arrow-down-icon {
+  margin-left: 8px;
+}
+
+.navbar ul li.dropdown:hover .arrow-down-icon {
+  transform: rotate(-180deg);
+}
+
+@media (max-width: 780px) {
+  .navbar ul {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .navbar ul li:not(:first-child) {
+    padding: 10px;
+    display: none;
+  }
+  .navbar .search-icon {
+    display: none;
+  }
+  .navbar .bars-icon {
+    display: block;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+}
+
+/* End Navbar Style */
+/* Start Main Image Style */
+.main-image {
+  position: relative;
+}
+.main-image img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+.main-image__label {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  padding: 10px;
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* End Main Image Style */
+/* Start Our Team Style */
+.our-team {
+  text-align: center;
+  padding: 50px;
+}
+
+.our-team .our-team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  width: 100%;
+  margin: 50px 0;
+}
+
+.our-team .our-team-container .person-container {
+  margin-bottom: 20px;
+}
+
+.our-team .our-team-container .person-container .person-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* End Our Team Style */
+/* Start Our Work Style */
+.our-work {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  width: 100%;
+  padding: 40px 20px;
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.about-our-work {
+  width: 300px;
+  align-self: flex-start;
+}
+
+.about-our-work h3 {
+  margin-bottom: 10px;
+}
+
+.about-our-work-customer {
+  padding: 10px;
+}
+
+.our-work .work-container {
+  color: var(--secondary-color);
+  background-color: white;
+}
+
+.our-work .work-container .work-image {
+  width: 300px;
+  height: 170px;
+  object-fit: cover;
+}
+
+.our-work::before {
+  content: "+";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  bottom: -30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+}
+/* End Our Work Style */
+/* Start Contact Us Style */
+/* End Contact Us Style */
+.back-to-top-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
