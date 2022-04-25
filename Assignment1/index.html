@@ -19,6 +19,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="./main.js" defer></script>
     <link rel="stylesheet" href="style.css" />
     <title>Bayt</title>
   </head>
@@ -27,7 +28,7 @@
     <nav class="navbar">
       <ul>
         <li class="active">
-          <a href="#"
+          <a id="logo" href="#"
             ><i class="logo-icon fa-solid fa-house-chimney"></i>Logo</a
           >
         </li>
@@ -44,7 +45,7 @@
       <i class="search-icon fa-solid fa-magnifying-glass"></i>
       <i class="bars-icon fa-solid fa-bars"></i>
     </nav>
-    <nav>
+    <nav class="mobile-nav">
       <ul>
         <li><a href="#">Team</a></li>
         <li><a href="#">Work</a></li>
@@ -162,6 +163,8 @@
       </div>
     </div>
     <!--  End Contact Us Section  -->
-    <i class="back-to-top-icon fa-solid fa-angle-up"></i>
+    <a href="#logo">
+      <i class="back-to-top-icon fa-solid fa-angle-up"></i>
+    </a>
   </body>
 </html>
