@@ -1,4 +1,3 @@
-const nav = document.querySelector(".navbar");
 const mobileNav = document.querySelector(".mobile-nav");
 const barsIcon = document.querySelector(".bars-icon");
 
